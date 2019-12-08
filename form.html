@@ -4,6 +4,20 @@
     <meta charset="utf-8">
     <title>MihovelDB</title>
     <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+"HTML-CSS": { scale: 200, linebreaks: { automatic: false } },
+SVG: { linebreaks: { automatic:false } },
+displayAlign: "left" });
+</script>
+
   </head>
 
   <body>
@@ -68,9 +82,18 @@
       </div>
 
       <!-- Button-->
-      <button class="button" id="commit">Отправить в бд</button>
+      <button class="button" id="commit">Отправить в бд
+      </button>
 
     </form>
-  <body>
 
+</body>
+<script>
+   // ваш код
+$("#addRelative").click(function(event) {
+  event.preventDefault();
+    var counter = 0;
+     $("#relatives").append('<input class="input" id="relativeInputID1" type="text" placeholder="ID1"> </p>');
+  });
+</script>
 </html>
